@@ -1,0 +1,136 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tugascoding;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author naufa
+ */
+public class mencariratanilai {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Selamat datang untuk seleksi nilai memasuki SMK TELKOM SANDHY PUTRA MALANG!!");
+        System.out.println("Layanan ini membantu anda untuk melihat rata-rata nilai anda");
+        System.out.println("Rata-rata nilai untuk masuk di smk telkom yaitu dengan minimal 70");
+        System.out.println("==========================================================================");
+        System.out.print("Masukkan Nilai Bahasa Indonesia : ");
+        int nilai=input.nextInt();
+        System.out.print("Masukkan Nilai Bahasa Inggris : ");
+        int nilai1 = input.nextInt();
+        System.out.print("Masukkan Nilai Ilmu Pengetahuan Alam : ");
+        int nilai2 = input.nextInt();
+        System.out.print("Masukkan Nilai Ilmu Pengetahuan Sosial : ");
+        int nilai3 = input.nextInt();
+        System.out.print("Masukkan Nilai Pendidikan Agama : ");
+        int nilai4 = input.nextInt();
+        System.out.println("");
+        
+        if(nilai<=70){
+            System.out.println("Nilai Bahasa Indonesiamu kurang");
+            System.out.println("");
+        }else if(nilai<=80){
+            System.out.println("Nilai Bahasa Indonesiamu cukup");
+            System.out.println("");
+        }else if(nilai<=90){
+            System.out.println("Nilai Bahasa Indonesiamu baik");
+            System.out.println("");
+        }else if(nilai<=100){
+            System.out.println("Nilai Bahasa Indonesiamu sangat baik");
+            System.out.println("");
+        }else{
+            System.out.println("Nilai tidak valid");
+        }
+        
+        if(nilai1<=70){
+            System.out.println("Nilai Bahasa Inggrismu kurang");
+            System.out.println("");
+        }else if(nilai1<=80){
+            System.out.println("Nilai Bahasa Inggrismu cukup");
+            System.out.println("");
+        }else if(nilai1<=90){
+            System.out.println("Nilai Bahasa Inggrismu baik");
+            System.out.println("");
+        }else if(nilai1<=100){
+            System.out.println("Nilai Bahasa Inggrismu sangat baik");
+            System.out.println("");
+        }else{
+            System.out.println("Nilai tidak valid");
+        }
+        
+        if(nilai2<=70){
+            System.out.println("Nilai Ilmu Pengetahuan Alammu kurang");
+            System.out.println("");
+        }else if(nilai2<=80){
+            System.out.println("Nilai Ilmu Pengetahuan Alammu cukup");
+            System.out.println("");
+        }else if(nilai2<=90){
+            System.out.println("Nilai Ilmu Pengetahuan Alammu baik");
+            System.out.println("");
+        }else if(nilai2<=100){
+            System.out.println("Nilai Ilmu Pengetahuan Alammu sangat baik");
+            System.out.println("");
+        }else{
+            System.out.println("Nilai tidak valid");
+        }
+        
+        if(nilai3<=70){
+            System.out.println("Nilai Ilmu Pengetahuan Sosialmu kurang");
+            System.out.println("");
+        }else if(nilai3<=80){
+            System.out.println("Nilai Ilmu Pengetahuan Sosialmu cukup");
+            System.out.println("");
+        }else if(nilai3<=90){
+            System.out.println("Nilai Ilmu Pengetahuan Sosialmu baik");
+            System.out.println("");
+        }else if(nilai3<=100){
+            System.out.println("Nilai Ilmu Pengetahuan Sosialmu sangat baik");
+            System.out.println("");
+        }else{
+            System.out.println("Nilai tidak valid");
+        }
+        
+        if(nilai4<=70){
+            System.out.println("Nilai Pendidikan Agamamu kurang");
+            System.out.println("");
+        }else if(nilai4<=80){
+            System.out.println("Nilai Pendidikan Agamamu cukup");
+            System.out.println("");
+        }else if(nilai4<=90){
+            System.out.println("Nilai Pendidikan Agamamu baik");
+            System.out.println("");
+        }else if(nilai4<=100){
+            System.out.println("Nilai Pendidikan Agamamu sangat baik");
+            System.out.println("");
+        }else{
+            System.out.println("Nilai tidak valid");
+        }
+        
+        int totaln = nilai+nilai1+nilai2+nilai3+nilai4;
+        double totalr = (nilai+nilai1+nilai2+nilai3+nilai4)/5;
+        System.out.println("-------------------------------------------");
+        System.out.println("Total nilai mu adalah : "+totaln);
+        System.out.println("");
+        System.out.println("Rata-rata nilaimu adalah : "+totalr);
+        System.out.println("===========================================");
+        if (totalr<=70){
+            System.out.println("Nilaimu Kurang mencukupi");
+            System.out.println("Tetap semangat ya!!!");
+        }else if (totalr<=80){
+            System.out.println("Nilaimu Sudah cukup");
+            System.out.println("Tingkatkan lagi ya belajarmu!!!");
+        }else if (totalr<=90){
+            System.out.println("Nilaimu sudah bagus");
+            System.out.println("Pertahankan dan tingkatkan belajarmu ya!!!");
+        }else if (totalr<=100){
+            System.out.println("Nilaimu sudah sangat bagus");
+            System.out.println("Pertahankan perjuanganmu ya!!!");
+        }
+        System.out.println("");
+        System.out.println("Terimakasih sudah memakai pelayanan kami!!");
+        System.out.println("Tetap semangat dan pantang menyerah!!!");
+    }
+}
